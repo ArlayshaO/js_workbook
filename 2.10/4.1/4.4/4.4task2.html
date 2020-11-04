@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+<body>
+<script>
+let calculator = {
+
+  sum() {
+      return this.value1 + this.value2;
+  },
+  
+      mul()  {
+          return this.value1 * this.value2;
+      },
+
+      read (){
+	  this.value1 = Number(prompt("Enter the first value", 0)); 
+	  this.value2 = Number(prompt("Enter the second value", 0));  
+	}
+
+};
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+    </script>
+</body>
+</html>
